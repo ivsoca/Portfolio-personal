@@ -29,12 +29,14 @@ nav{
   color: white;
   border-radius: 3px;
   border: 1px solid rgb(255, 255, 255);
+  /* float: inline-end; */
 }
 
 .btn-resume:hover{
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
+
 
 .my-name-parrafo{
   color: white;
@@ -213,9 +215,6 @@ nav{
     transition: filter 0.5s ease;
     filter: grayscale(100%);
   }
-  
-
-
   
   .perfil-img:hover {
     filter: grayscale(0%);
