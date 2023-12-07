@@ -3,9 +3,18 @@ body{
     background-color:black;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
+.vertical-line {
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  width: 1px; /* Ancho de la línea */
+  height: 10vh; /* Altura de la línea (100% del viewport height) */
+  background-color: #d1d1d1; /* Color de la línea, puedes cambiarlo según tus preferencias */
+}
 /* Animacion de "hi and welcome :)" */
 @keyframes fadeInFromLeft {
   from {
@@ -102,7 +111,7 @@ nav{
 
 
 .logo{
-  width: 80px;
+  width: 55px;
   /* position: relative;
   right: 10px;
   top: 35px; */
@@ -126,11 +135,19 @@ nav{
 }
 
 .icons-perfil{
-  margin-top:50px ;
+  /* margin-bottom:50px; */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  height: 33vh; 
 }
 
+
+
 footer{
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   text-align: center;
   /* height: 35px; */
   color: rgb(181, 181, 181);
