@@ -9,22 +9,34 @@
     <title>Ivan Soca</title>
 </head>
 <body> 
+    
     <header id="background-container">
         <nav class="container text-center bg-black">
                 <a href="#about-me">Sobre mi</a>
                 <a href="./proyectosPersonales.html">Proyectos personales</a>
-        </nav>        
+                <button class="btn-resume" id="openPdfButton">Resume</button>
+        </nav>
+        
+        <div class="contenedor">
+            <p id="miParrafo">¡Hi, and welcome! :)</p>
+          </div>        
     </header>
 
-    <nav id="header-container">     
+
+    <nav id="header-container">
+    <!-- <p class="my-name-parrafo">My name is</p> -->
     <h1 id="h1-mi-nombre" class="text-beggining">Iván Soca</h1>
-    <p id="parrafo-header" class="text-beggining">¡Hi, and welcome! :)</p> 
+    <!-- <p id="parrafo-header" class="text-beggining">¡Hi, and welcome! :)</p>  -->
 
     <section id="about-me" class="container">
-        <img src="./assets/Sin título.jpg" class="perfil-img" alt="">
+        <img src="./assets/yo.jpg" class="perfil-img" alt="">
+        
         <div class="about-me-container" id="sobreMi">
             <h1 class="h1">Sobre mi</h1>
+            <p class="parrafo-linea"></p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam a nihil repellendus aut possimus praesentium laudantium, id provident debitis voluptate? Culpa rerum iure commodi quod ipsum? Dolorum suscipit laudantium, fugit eaque illum quidem perferendis vitae deleniti ex, quia ut dolorem, accusantium sit cupiditate consequatur totam consequuntur! Ad, recusandae. Debitis, quo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo, at voluptatum fugiat non voluptatibus consequatur facilis omnis veniam, iure officiis itaque, sequi quod tempora dolorem aliquam rem repellendus iste.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis pariatur est hic totam quaerat odio non blanditiis exercitationem dignissimos, quae reiciendis esse animi quo? Nesciunt iure dolor obcaecati tempore quisquam!</p>
         </div>
     </section>   
 
@@ -32,37 +44,45 @@
     <section class="section-container">
         
     <section class="section-container container text-center">
-    <h3 class="h1">Tecnlogias que manejo</h3>
-    <div class="icons-perfil">
-    <img class="logoTec"src="./assets/bootstrap.png" alt="">
-    <img class="logoTec"src="./assets/angular_whiteTransparent.png" alt="">
-    <img class="logoTec"src="./assets/js.png" alt="">
-    <img class="logoTec"src="./assets/css.png" alt="">
-
+    <h3 class="h1">Tecnologias que utilizo</h3>
+    <div class="iconsTec">
+    <img class="logoTec"src="./assets/html.png" title="Html">
+    <img class="logoTec"src="./assets/css.png" title="Css">
+    <img class="logoTec"src="./assets/js.png" title="JavaScript">
+    <img class="logoTec"src="./assets/bootstrap.png" title="Bootstrap">
+    <img class="logoTec"src="./assets/angular_whiteTransparent.png" title="Angular">
     </div>
     </section> 
 
-    <br>
-    <hr>
+  
 
     <div class="vertical-line"></div>
+    
+
+
 
     <section class="section-container container text-center">
-    <!-- <h3 class="h1">Perfiles Sociales</h3> -->
+    <h3 class="perfiles-sociales">Perfiles Sociales</h3>
     <div class="icons-perfil">
-    <img class="logo"src="./assets/githublogo.png" alt="">
-    <a href="https://github.com/ivsoca" class="a-ref"></a>
-    <img class="logo"src="./assets/Insta-Logo-PNG-Pic.png" alt="">
-    <a href="https://www.instagram.com/socaaaaa/" class="a-ref"></a>
-    <img class="logo"src="./assets/ilinkedin.webp" alt="">
-    <a href="https://www.instagram.com/socaaaaa/" class="a-ref"></a>
+    <a href="https://github.com/ivsoca" class="a-ref"> <img class="logo"src="./assets/githublogo.png" alt=""> </a>
+    <a href="https://www.instagram.com/socaaaaa/" class="a-ref"> <img class="logo"src="./assets/Insta-Logo-PNG-Pic.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/ivan-soca-b17321295/" class="a-ref"><img class="logo"src="./assets/ilinkedin.webp" alt=""></a>
     </div>
     </section>
 
-    <footer class="">
-        <img class="logo-footer"src="./assets/phone3.png" alt="">097804080
-        <img class="logo-footer"src="./assets/mail2.png" alt="">ivansoca26@gmail.com
+
+    <div class="vertical-line2">
+        <p class="parrafo-line">ivansoca26@gmail.com</p>
+    </div>
+
+    <footer class="mail">
+        <!-- <img class="logo-footer"src="./assets/phone3.png" alt="">097804080 -->
+        <p class="prueba">Copyright © 2023-By Ivan Soca</p>
+         <img class="logo-footer"src="./assets/mail2.png" alt="">   
+        
     </footer>
+    
+    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

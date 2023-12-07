@@ -7,14 +7,7 @@ body{
 }
 
 
-.vertical-line {
-  position: fixed;
-  bottom: 0;
-  left: 40px;
-  width: 1px; /* Ancho de la línea */
-  height: 10vh; /* Altura de la línea (100% del viewport height) */
-  background-color: #d1d1d1; /* Color de la línea, puedes cambiarlo según tus preferencias */
-}
+
 /* Animacion de "hi and welcome :)" */
 @keyframes fadeInFromLeft {
   from {
@@ -31,7 +24,27 @@ nav{
   background-color: #15171a;
 }
 
+.btn-resume{
+  background-color: #000000;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(255, 255, 255);
+}
 
+.btn-resume:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.my-name-parrafo{
+  color: white;
+  position: relative;
+  bottom: 32vh;
+  left: 79vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  /* font-size: 20px; */
+}
 
 .nav ul {
     list-style: none; 
@@ -94,24 +107,209 @@ nav{
     animation-delay: 0.5s; 
 }
 
-#about-me{
-  display: flex;
-  position: relative;
-  bottom: 100px;
+
+
+/*  */
+@media (max-width: 768px) {
+  .perfil-img{
+    width: 200px;
+    height: 300px;
+    /* overflow: hidden; */
+    object-fit: cover;
+    border-radius:5px;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+    /* position: relative;
+    left: 25%; */
+    margin: 0 auto;
+    margin-bottom:50px;
+  }
+  .perfil-img:hover {
+    filter: grayscale(0%);
+  }
+
+  .perfiles-sociales{
+    color: white !important;
+  }
+
+  #miParrafo{
+    position: relative;
+    top: 120px;
+  }
+
+  #about-me{
+    display: flex;
+    flex-direction: column;
+    /* position: relative;
+    left:100px; */
+  }
+  
+  .parrafo-linea{
+    border-bottom: 1px solid #333;
+    position: relative;
+    bottom: 0px; 
+  }
 }
 
-.about-me-container {
-  width: 600px; 
-  margin: 10px;
+/*  */
+@media (min-width: 1025px){
+  .perfiles-sociales{
+    display: none;
+  }
 }
 
+/*  */
+@media (min-width: 1024px) {
+  .perfil-img{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius:5px;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
+  .logo-footer{
+    position: relative;
+    bottom: 10000px;
+}
+  .perfil-img:hover {
+    filter: grayscale(0%);
+  }
+  #about-me{
+    display: flex;
+    /* position: relative;
+    left:100px; */
+  }
+  
+  .about-me-container {
+    width: 700px; 
+    padding: 70px;
+  }
+  .about-me-container p, h1 {
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .parrafo-linea{
+    border-bottom: 1px solid #333;
+    position: relative;
+    bottom: 0px; 
+  }
+
+  
+  .perfiles-sociales{
+    color: white !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .perfil-img{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius:5px;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
+  
+
+
+  
+  .perfil-img:hover {
+    filter: grayscale(0%);
+  }
+  #about-me{
+    display: flex;
+    position: relative;
+    left:100px;
+  }
+  
+  .about-me-container {
+    width: 700px; 
+    padding: 70px;
+  }
+  .about-me-container p, h1 {
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .parrafo-linea{
+    border-bottom: 1px solid #333;
+    position: relative;
+    bottom: 0px; 
+  }
+}
 .section-container{
-
+  margin-top:200px;
 }
 
+@media screen and (min-width: 1025px) {
+  /* Agrega aquí tus estilos para pantallas grandes */
+  .vertical-line {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    width: 1px; 
+    height: 10vh; 
+    background-color: #d1d1d1; 
+  }
 
-.logo{
-  width: 55px;
+  .vertical-line2 {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    width: 1px; 
+    height: 10vh; 
+    background-color: #d1d1d1; 
+  }
+
+  .parrafo-line{
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 200px;
+  }
+
+  .logo{
+    width: 55px;
+    /* position: relative;
+    right: 10px;
+    top: 35px; */
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover{
+    transform: scale(1.4);
+  }
+  
+  
+  .logo-footer{
+      width: 40px;
+      padding: 10px;
+      transition: transform 0.3s ease;
+  }
+  
+  .logo-footer:hover{
+      transform: scale(1.4);
+  }
+  
+  .icons-perfil{
+    /* margin-bottom:50px; */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 6px;
+    height: 33vh; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+   /* Agrega aquí tus estilos para pantallas más pequeñas */
+  .logo{
+  width: 80px;
   /* position: relative;
   right: 10px;
   top: 35px; */
@@ -123,10 +321,20 @@ nav{
   transform: scale(1.4);
 }
 
+.parrafo-line{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50px
+}
+
 
 .logo-footer{
     width: 40px;
     padding: 10px;
+    position: relative;
+    bottom: 133px;
     transition: transform 0.3s ease;
 }
 
@@ -135,15 +343,67 @@ nav{
 }
 
 .icons-perfil{
-  /* margin-bottom:50px; */
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 0;
-  left: 15px;
-  height: 33vh; 
+  margin-top:50px ;
 }
 
+
+
+}
+
+
+@media (min-width: 1440px) {
+  /* Estilos específicos para pantallas de 1440 píxeles o más */
+  .vertical-line2 {
+    position: fixed;
+    bottom: 0;
+    right: 110px;
+    width: 1px; 
+    height: 10vh; 
+    background-color: #d1d1d1; 
+  }
+  
+}
+/* Foto mia */
+
+
+
+.logoTec{
+  width: 80px;
+  /* position: relative;
+  right: 10px;
+  top: 35px; */
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.logoTec-footer:hover{
+  transform: scale(1.4);
+}
+
+.icons-perfil-tec{
+  margin-top:50px ;
+}
+
+
+.logoTec:hover{
+  transform: scale(1.4);
+}
+
+
+.logo-footer-tec{
+    width: 40px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-footer-tec:hover{
+    transform: scale(1.4);
+}
+
+.iconsTec{
+  position: relative;
+  top: 30px;
+}
 
 
 footer{
@@ -153,3 +413,45 @@ footer{
   color: rgb(181, 181, 181);
   margin-top: 100px;
 }
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 170px;
+  /* height: 100vh; */
+}
+
+
+/* Animacion de las letras del principio */
+
+@keyframes cambioTexto {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#miParrafo {
+  font-size: 24px;
+  animation: cambioTexto 4s infinite; /* Ajusta la duración y el comportamiento de la animación */
+}
+
+
+.prueba{
+  position: relative;
+  font-size: 13px;
+  color: #787878;
+  top: 50px;
+}
+
