@@ -251,7 +251,7 @@ nav{
     bottom: 0;
     left: 40px;
     width: 1px; 
-    height: 10vh; 
+    height: 7vh; 
     background-color: #d1d1d1; 
   }
 
@@ -260,7 +260,7 @@ nav{
     bottom: 0;
     right: 40px;
     width: 1px; 
-    height: 10vh; 
+    height: 7vh; 
     background-color: #d1d1d1; 
   }
 
@@ -344,8 +344,6 @@ nav{
 .icons-perfil{
   margin-top:50px ;
 }
-
-
 
 }
 
