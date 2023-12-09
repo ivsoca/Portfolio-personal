@@ -245,15 +245,9 @@ nav{
   margin-top:200px;
 }
 
-@media (max-width: 1440px) {
-  /* Aquí colocas los estilos que deseas aplicar para pantallas de 1440 píxeles o menos */
+@media (max-width: 1600px) {
   .vertical-line {
-    position: fixed;
-    bottom: 0;
-    left: 40px;
-    width: 1px; 
-    height: 2vh; 
-    background-color: #d1d1d1; 
+   display: none;
   }
 }
 
