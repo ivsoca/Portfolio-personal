@@ -241,8 +241,22 @@ nav{
   }
 }
 .section-container{
+  
   margin-top:200px;
 }
+
+@media (max-width: 1440px) {
+  /* Aquí colocas los estilos que deseas aplicar para pantallas de 1440 píxeles o menos */
+  .vertical-line {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    width: 1px; 
+    height: 2vh; 
+    background-color: #d1d1d1; 
+  }
+}
+
 
 @media screen and (min-width: 1025px) {
   /* Agrega aquí tus estilos para pantallas grandes */
@@ -316,6 +330,8 @@ nav{
   transition: transform 0.3s ease;
 }
 
+
+
 .logo:hover{
   transform: scale(1.4);
 }
@@ -378,7 +394,7 @@ nav{
 }
 
 .icons-perfil-tec{
-  margin-top:50px ;
+  margin-top:50px;
 }
 
 
