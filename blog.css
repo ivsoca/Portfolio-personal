@@ -1,0 +1,116 @@
+
+body{
+    background-color:#15171a !important;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-container{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom:30px;
+    padding: 30px;
+    padding-top: 40px;
+    overflow: hidden;
+    font-size: 20px;
+    /* letter-spacing: 0.05em; */
+    /* text-overflow: ellipsis;  */
+     /* white-space: nowrap;  */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+}
+
+.a-href{
+    cursor: pointer;
+    color: white;
+}
+
+
+.blog-container p{
+   padding: 2px;
+}
+
+.parrafo-introduccion {
+    font-weight: bold;
+}
+
+.cutoff-text{
+    --max-lines: 5;
+    --line-height: 2;
+
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+    overflow: hidden;
+    position: relative;
+
+
+    /* display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines) */
+}
+
+.cutoff-text::before{
+    content: "";
+    position: absolute;
+    height: calc(1em * var(--line-height));
+    width: 100%;
+    bottom: 0;
+    /* pointer-events: none; */
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+
+
+
+/* .extra{
+    display: none;
+}
+p {
+    display: inline;
+}
+input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+}
+label{
+    position: relative;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+label:before{
+    content: "Read More";
+}
+input[type="checkbox"]:checked ~ label:before{
+    content: "Read Less";
+}
+.dots:has(~input[type="checkbox"]:checked) {
+    display: none;
+}
+.extra:has(~input[type="checkbox"]:checked){
+    display: inline;
+} */
+
+@media (max-width: 425px) {
+    .blog-container{
+        margin-top:30px;
+        padding: 30px;
+    } 
+}
+
+@media screen and (min-width: 1440px) {
+    .blog-container{
+        /* display: flex; */
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 500px;
+        width: 700px;
+        margin: 0 auto;
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+  }
+
